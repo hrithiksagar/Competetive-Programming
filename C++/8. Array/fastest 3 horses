@@ -1,0 +1,24 @@
+have 25 horses
+cant cacl exact speed
+but can make them race and find which horse is faster than which 
+but at one point only 5 horses can be have raced.
+    A1 A2 A3 A4 A5
+r1: 1  2  3  4  5   A |  winner is 1
+r2: 6  7  8  9  10  B |  winner is 6
+r3: 11 12 13 14 15  C |  winner is 11
+r4: 16 17 18 19 20  D |  winner is 16
+r5: 21 22 23 24 25  E |  winner is 21
+case 1: 
+now 6th race between winners : 1  6  11  16  21
+winner is 1, 6, 11 : these 3 are fastest horses
+1st : A1
+2nd : B1, A2
+3rd : B2, A3, C1  / (B1, A2)
+
+2nd and 3rd we have 5 choices:
+A2, A3, B1, B2, C1
+now race between these 5, i.e. 7th race
+winner 1 = 2nd fastest horse
+winner 2= 3rd fastest horse
+
+

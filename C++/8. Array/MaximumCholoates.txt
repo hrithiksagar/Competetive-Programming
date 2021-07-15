@@ -1,0 +1,9 @@
+/*
+Q) you have 15 rupees
+1 r = 1 choc
+3 wrappers  = 1 chocolate
+so for 15 rup how many chocolates can be bought?
+ans) 
+15 chocolates+ (15/3) = 5 more chocolates + 1 more chocolate + 1 more chocolate = 
+22 chocolates in total. 
+*/
