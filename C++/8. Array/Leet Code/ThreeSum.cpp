@@ -21,3 +21,6 @@ int main()
     // commited using GitHub Desktop application
     // after commiting using desktop
     // yes it worked with its app
+    // now tried after talking to Ritik!
+    // done everyhtiung from first using git init cloninig form first
+    
