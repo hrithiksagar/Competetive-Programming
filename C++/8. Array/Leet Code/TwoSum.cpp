@@ -25,3 +25,4 @@ int main()
 }
 // lets have an other approach to optimize 
 //time complexity from O(n^2) to :
+//
