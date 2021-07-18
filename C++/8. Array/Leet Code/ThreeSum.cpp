@@ -12,6 +12,6 @@ int main()
         cin >> a[i];
     }
 
-    
+    //
     return 0;
 }
