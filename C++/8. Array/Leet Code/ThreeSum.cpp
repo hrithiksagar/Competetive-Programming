@@ -12,9 +12,12 @@ int main()
         cin >> a[i];
     }
 
+  
+    return 0;
+}
+
     // just for testing purpose! commit name: test 1
     //update: not working using vscode
     // commited using GitHub Desktop application
-    
-    return 0;
-}
+    // after commiting using desktop
+    // yes it worked with its app
