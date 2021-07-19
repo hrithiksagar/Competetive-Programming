@@ -62,3 +62,96 @@
 // commiting using vs code
 
 
+//
+
+updated gpg:: terminal history
+Last login: Sun Jul 18 21:15:42 on ttys000
+hrithiksagar@Hrithiks-MacBook-Air ~ % git config --global gpg.program gpg2
+
+hrithiksagar@Hrithiks-MacBook-Air ~ % brew install pinentry 
+Updating Homebrew...
+==> Homebrew is run entirely by unpaid volunteers. Please consider donating:
+  https://github.com/Homebrew/brew#donations
+==> Auto-updated Homebrew!
+Updated 2 taps (homebrew/core and homebrew/cask).
+==> Updated Formulae
+Updated 138 formulae.
+==> Updated Casks
+Updated 7 casks.
+
+Warning: pinentry 1.1.1 is already installed and up-to-date.
+To reinstall 1.1.1, run:
+  brew reinstall pinentry
+hrithiksagar@Hrithiks-MacBook-Air ~ % gpgconf --kill gpg-agent
+
+hrithiksagar@Hrithiks-MacBook-Air ~ % gpg2 -K --keyid-format SHORT
+
+zsh: command not found: gpg2
+hrithiksagar@Hrithiks-MacBook-Air ~ % gpg -K --keyid-format SHORT 
+
+gpg: checking the trustdb
+gpg: marginals needed: 3  completes needed: 1  trust model: pgp
+gpg: depth: 0  valid:   1  signed:   0  trust: 0-, 0q, 0n, 0m, 0f, 1u
+gpg: next trustdb check due at 2023-07-18
+/Users/hrithiksagar/.gnupg/pubring.kbx
+--------------------------------------
+sec   ed25519/59EED8ED 2021-07-18 [SC] [expires: 2023-07-18]
+      F5C64315873B9FFE8B66DEA2375243A959EED8ED
+uid         [ultimate] hrithik <hrithiksagar36@gmail.com>
+ssb   cv25519/6922C1C6 2021-07-18 [E] [expires: 2023-07-18]
+
+hrithiksagar@Hrithiks-MacBook-Air ~ % gpg --gen-key 
+
+gpg (GnuPG) 2.3.1; Copyright (C) 2021 Free Software Foundation, Inc.
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.
+
+Note: Use "gpg --full-generate-key" for a full featured key generation dialog.
+
+GnuPG needs to construct a user ID to identify your key.
+
+Real name: hrithik
+Email address: hrithiksagar36@gmail.com
+You selected this USER-ID:
+    "hrithik <hrithiksagar36@gmail.com>"
+
+Change (N)ame, (E)mail, or (O)kay/(Q)uit? o
+We need to generate a lot of random bytes. It is a good idea to perform
+some other action (type on the keyboard, move the mouse, utilize the
+disks) during the prime generation; this gives the random number
+generator a better chance to gain enough entropy.
+We need to generate a lot of random bytes. It is a good idea to perform
+some other action (type on the keyboard, move the mouse, utilize the
+disks) during the prime generation; this gives the random number
+generator a better chance to gain enough entropy.
+gpg: key 46D5175B24443A11 marked as ultimately trusted
+gpg: revocation certificate stored as '/Users/hrithiksagar/.gnupg/openpgp-revocs.d/9E73E158EB00E347A1DB73A946D5175B24443A11.rev'
+public and secret key created and signed.
+
+pub   ed25519 2021-07-18 [SC] [expires: 2023-07-18]
+      9E73E158EB00E347A1DB73A946D5175B24443A11
+uid                      hrithik <hrithiksagar36@gmail.com>
+sub   cv25519 2021-07-18 [E] [expires: 2023-07-18]
+
+hrithiksagar@Hrithiks-MacBook-Air ~ % gpg2 -K --keyid-format SHORT 
+
+zsh: command not found: gpg2
+hrithiksagar@Hrithiks-MacBook-Air ~ % gpg -K --keyid-format SHORT  
+
+gpg: checking the trustdb
+gpg: marginals needed: 3  completes needed: 1  trust model: pgp
+gpg: depth: 0  valid:   2  signed:   0  trust: 0-, 0q, 0n, 0m, 0f, 2u
+gpg: next trustdb check due at 2023-07-18
+/Users/hrithiksagar/.gnupg/pubring.kbx
+--------------------------------------
+sec   ed25519/59EED8ED 2021-07-18 [SC] [expires: 2023-07-18]
+      F5C64315873B9FFE8B66DEA2375243A959EED8ED
+uid         [ultimate] hrithik <hrithiksagar36@gmail.com>
+ssb   cv25519/6922C1C6 2021-07-18 [E] [expires: 2023-07-18]
+
+sec   ed25519/24443A11 2021-07-18 [SC] [expires: 2023-07-18]
+      9E73E158EB00E347A1DB73A946D5175B24443A11
+uid         [ultimate] hrithik <hrithiksagar36@gmail.com>
+ssb   cv25519/846F9556 2021-07-18 [E] [expires: 2023-07-18]
+
+hrithiksagar@Hrithiks-MacBook-Air ~ % 
