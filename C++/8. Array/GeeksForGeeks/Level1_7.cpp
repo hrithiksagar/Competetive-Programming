@@ -35,7 +35,6 @@ float getMin(float a[],int n){
     }
     return res;
 }
-
 float getMax(float a[],int n){
     float res = a[0];
     for (int i = 0; i < n; i++)
@@ -43,9 +42,7 @@ float getMax(float a[],int n){
         res = max(res, a[i]);
     }
     return res;
-
 }
-
 void findRangeAndCoefficient(float a[], int n){
     float min = getMin(a,n);
     float max = getMax(a,n);
@@ -55,8 +52,6 @@ void findRangeAndCoefficient(float a[], int n){
     cout<<"Coefficient of range= "<< coef<<endl;
 
 }
-
-
 int main(){
     float a[] = {5,10,15};
     int n = sizeof(a)/sizeof(a[0]);
