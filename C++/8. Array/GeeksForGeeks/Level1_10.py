@@ -56,9 +56,7 @@
 # 	union(arr1,arr2)
 def UnionArray(arr1, arr2):
      
-    # Taking max element present in either array
-    m = arr1[-1]
-    n = arr2[-1]
+
     ans = 0
          
     if m > n:
@@ -103,11 +101,28 @@ def UnionArray(arr1, arr2):
              
             print(arr2[j], end = " ")
             newtable[arr2[j]] += 1
-     
+def printIntersection(arr1, arr2, m, n):
+	i, j = 0, 0
+	m = len(arr1)
+	n = len(arr2)
+    while i < m and j < n:
+        if arr1[i] < arr2[j]:
+            i += 1
+        elif arr2[j] < arr1[i]:
+            j+= 1
+        else:
+            print(arr2[j])
+            j += 1
+            i += 1
 # Driver Code
 if __name__ == "__main__":
      
     arr1 = [1, 2, 2, 2, 3]
     arr2 = [2, 3, 4, 5]
-         
+	    # Taking max element present in either array
+    m = len(arr1)
+    n = len(arr2)
     UnionArray(arr1, arr2)
+	printIntersection(arr1, arr2, m, n)
+
+# intersection using c;
