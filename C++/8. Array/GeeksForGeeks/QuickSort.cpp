@@ -79,6 +79,7 @@ void printArray(int a[], int size)
     for (int i = 0; i < size; i++)
     {
         cout << a[i] << " ";
+        
     }
     cout << endl;
 }
@@ -90,5 +91,6 @@ int main()
     quickSort(a, 0, n - 1);
     cout << "Sorted array: \n";
     printArray(a, n);
+ 
     return 0;
 }
