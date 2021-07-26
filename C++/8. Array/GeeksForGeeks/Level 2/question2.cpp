@@ -43,7 +43,7 @@ int getMissingNo(int a[], int n)
 // Driver Code
 int main()
 {
-    int arr[] = { 1, 2, 4, 5, 6, 8, 9 };
+    int arr[] = { 1, 2, 3, 5};
     int n = sizeof(arr) / sizeof(arr[0]);
     int miss = getMissingNo(arr, n);
     cout << miss;
