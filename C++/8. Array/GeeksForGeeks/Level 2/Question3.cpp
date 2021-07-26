@@ -113,3 +113,15 @@ int main()
     cout << "Count of pairs is " << pairsumcount(arr, n, sum);
     return 0;
 }
+
+/**
+ * @brief youtube explaination
+ *Map data structure 
+ * key - value
+ * a ==== apple
+ * b ==== ball
+ * .
+ * .
+ * .
+ * 
+ */
