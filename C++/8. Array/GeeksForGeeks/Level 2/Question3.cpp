@@ -38,23 +38,54 @@ Output :  9
 #include <iostream>
 using namespace std;
 
+// int pairsumcount(int arr[], int n, int sum)
+// {
+//     int count = 0; // this is to initialize result
+//     for (int i = 0; i < n; i++)
+//     {
+//         for (int j = i + 1; j < n; j++)
+//         {
+//             if (arr[i] + arr[j] == sum)
+//             {
+//                 count++;
+//             }
+//         }
+//     }
+//     return count;
+// }
+// int main()
+// {
+//     int arr[] = {1, 5, 7, -1, 5};
+//     int n = sizeof(arr) / sizeof(arr[0]);
+//     int sum = 6;
+//     cout << "Count of pairs is " << pairsumcount(arr, n, sum);
+//     return 0;
+// }
+
+/*
+time comp = O(n^2)
+space = O(1)
+this is the problem this is not optimized
+So lets try for other method:
+efficient sol:
+using hashmap
+so first lest create a hashmap to store frequency of each number appeared how many times
+this needs single traversal
+now other traversal for, every element check if it can be combined with any other element (Obv other than itself)
+to get desired Sum.
+then increment the counter accordingly
+now after 2nd loop is finished we have twice of the required value stored in counter because every pair is counted two times
+hence divide it by 2and return counter
+we have 
+
+
+
+*/
+using namespace std::unordered_map;
 int pairsumcount(int arr[], int n, int sum)
 {
-    int count = 0; // this is to initialize result
-    for (int i = 0; i < n; i++)
-    {
-        for (int j = i+1; j < n; j++)
-        {
-            if (arr[i]+arr[j] == sum)
-            {
-                count++;
-            }
-            
-        }
-        
-    }
-    return count;
-
+    unordered_map<int, int> m;
+    
 }
 int main()
 {
