@@ -31,5 +31,4 @@ def getPairsCount(arr, n, sum):
 arr = [1, 5, 7, -1, 5]
 n = len(arr)
 sum = 6
-print("Count of pairs is", getPairsCount(arr,
-                                         n, sum))
+print("Count of pairs is", getPairsCount(arr,n, sum))
