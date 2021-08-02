@@ -34,14 +34,32 @@ def ThreeLargestnumbers(a, m):
             third = second
             second = first
             first = a[i]
-        elif a[i]> second: # if ele is in btw first and second then update scond
+        elif a[i] > second:  # if ele is in btw first and second then update scond
             third = second
             second = a[i]
-        elif a[i]> third:
+        elif a[i] > third:
             third = a[i]
     print(first, second, third)
+
+# method 2: an efficient way to solve this using 0(nlogn)
+# Simply returning last 3 largest ele
+def threelargestnumbers(ar,nm):
+    ar = sorted(ar) # this uses tuned quicksort with avg case time nlogn
+    check = 0
+    count = 1
+    for i in range(1, n+1):
+        if count < 4:
+            if check!=ar[n-i]:
+                print(ar[n-i], end = " ")
+                check = ar[n-i]
+                count+=1
+            else:
+                break
 
 
 arr = [12, 13, 1, 10, 34, 1]
 n = len(arr)
+print("Method 1")
 ThreeLargestnumbers(arr, n)
+print("Method 2")
+threelargestnumbers(arr,n)
