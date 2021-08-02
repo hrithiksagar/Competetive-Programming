@@ -36,23 +36,30 @@ time: O(n) : Average
 method: traverse from right to left
         and update minimum index whenever we find an element that has been visited on right side
 """
-#implimentation of method 3:
+
+
+# implimentation of method 3:
 # hashing
-def FirstRepeating(arr, n):
-    min = -1 # initializing index of first repeating element
-    myset = dict() # creating empty hashset
-    for i in range(n-1,-1,-1): #traversing array form right to left range(start, stop, step) so here
-                               # range(n-1, -1,-1) n-1 = from end i.e. right most ele
-                               #                    -1 = stop ele i.e left most ele
-                               #                    -1 = go backwards each ele i.e 10 9 8 7 6 5 4 3 2 1.... (example)
-        if arr[i] in myset.keys(): # if ele is already in hashset:  update min
-            min = i # updating min
-        else: # this is what we need:
-            myset[arr[i]] = 1 # update this with true if element is not presrnt
-    if(min != -1):
-        print("first repeating ele = ", arr[min])
-    else:
-        print("No repeating ele")
+# def FirstRepeating(arr, n):
+#     min = -1  # initializing index of first repeating element
+#     myset = dict()  # creating empty hashset
+#     for i in range(n - 1, -1, -1):  # traversing array form right to left range(start, stop, step) so here
+#         # range(n-1, -1,-1) n-1 = from end i.e. right most ele
+#         #                    -1 = stop ele i.e left most ele
+#         #                    -1 = go backwards each ele i.e 10 9 8 7 6 5 4 3 2 1.... (example)
+#         if arr[i] in myset.keys():  # if ele is already in hashset:  update min
+#             min = i  # updating min
+#         else:  # this is what we need:
+#             myset[arr[i]] = 1  # update this with true if element is not presrnt
+#     if min != -1:
+#         print("first repeating ele = ", arr[min])
+#     else:
+#         print("No repeating ele")
+
+
+# Solving qs 7 without additional data structutes
+# only by using only arrays
+
 
 arr = [10, 3, 3, 4, 3, 5, 6]
 n = len(arr)
