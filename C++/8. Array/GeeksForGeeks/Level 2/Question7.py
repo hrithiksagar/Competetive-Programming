@@ -57,10 +57,34 @@ method: traverse from right to left
 #         print("No repeating ele")
 
 
-# Solving qs 7 without additional data structutes
+# Solving qs 7 without additional data structures
 # only by using only arrays
-
-
+def FirstRepeating(arr, n):
+    k = 0  # this will set k = 1 if any repeated elements found
+    maximum = n  # maximum from all the elements
+    for i in range(n):
+        if maximum < arr[i]:
+            maximum = arr[i]
+    # array a is for sorting, 1st time occurance of elem
+    # initialized by 0
+    a = [0 for i in range(maximum + 1)]
+    # store 1 in array b if ele is duplicate initialized by 0
+    b = [0 for i in range(maximum+1)]
+    for i in range(n): # if duplicate ele found
+        if(a[arr[i]]):
+            b[arr[i]] = 1
+            k = 1
+            continue
+        else:
+            a[arr[i]] = i # sorting 1st occurance of arr[i]
+    if k == 0:
+        print("No repeating")
+    else:
+        min = maximum+1
+        for i in range(maximum+1):
+            if a[i] and (min > (a[i])) and b[i]:
+                min = a[i]
+        print(arr[min])
 arr = [10, 3, 3, 4, 3, 5, 6]
 n = len(arr)
 FirstRepeating(arr, n)
