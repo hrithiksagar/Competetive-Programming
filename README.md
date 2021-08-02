@@ -15,6 +15,6 @@ Every program has its own description for clear understaing <h3>
  
  --> Rough solution idea describing how to solve it using coding.
  
- --> Then the final fuly functioning coded program.
+ --> Then the final fully functioning coded program.
  
  </h2>
