@@ -21,7 +21,7 @@ def common(arr1, arr2, arr3,n1,n2,n3):
     j=0
     k = 0
     while(i<n1 and j<n2 and k<n3):
-        if(arr1[i] == arr2[j] == arr3[k]):
+        if(arr1[i] == arr2[j] and arr2[j] == arr3[k]):
             print(arr1[i])
             i += 1
             j += 1
