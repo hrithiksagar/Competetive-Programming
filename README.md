@@ -5,7 +5,7 @@ Feel free to DM me to do write customized codes. <h2>
 Every program has its own description for clear understaing <h3>
  Ps: it takes time to keep uploading new codes and this takes minimum of 4 - 6 months of time!
 
- 
+ Update: After 1 and half month of preparation, now I'm following the same path using python and c++ both languages so that things get clearer and at the same time I'll be able to learn both the Languages
  
 <h2> Every code has a description of 
  
