@@ -69,22 +69,33 @@ def FirstRepeating(arr, n):
     # initialized by 0
     a = [0 for i in range(maximum + 1)]
     # store 1 in array b if ele is duplicate initialized by 0
-    b = [0 for i in range(maximum+1)]
-    for i in range(n): # if duplicate ele found
-        if(a[arr[i]]):
+    b = [0 for i in range(maximum + 1)]
+    for i in range(n):  # if duplicate ele found
+        if (a[arr[i]]):
             b[arr[i]] = 1
             k = 1
             continue
         else:
-            a[arr[i]] = i # sorting 1st occurance of arr[i]
+            a[arr[i]] = i  # sorting 1st occurance of arr[i]
     if k == 0:
         print("No repeating")
     else:
-        min = maximum+1
-        for i in range(maximum+1):
+        min = maximum + 1
+        for i in range(maximum + 1):
             if a[i] and (min > (a[i])) and b[i]:
                 min = a[i]
         print(arr[min])
-arr = [10, 3, 3, 4, 3, 5, 6]
+
+
+# other approach using python inbuilt
+def repeating(a, n):
+    for i in range(len(a)):
+        if a.count(a[i]) > 1:
+            return a[i]
+    return "No repetation"
+
+
+arr = [10, 7, 4, 4, 3, 5, 6]
 n = len(arr)
 FirstRepeating(arr, n)
+print(repeating(arr, n))
