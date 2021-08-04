@@ -37,9 +37,22 @@ def countTriplets(arr, n, m):
 # n= int(input())
 # arr = input()
 # arr=list(map(int,arr.split(" ")))
-n = input()
-arr = []
-for i in range(int(n)):
-    arr.append(int(input()))
+# n = input()
+# arr = []
+# for i in range(int(n)):
+#     arr.append(int(input()))
+#
+# print(countTriplets(arr, len(arr), n))
 
-print(countTriplets(arr, len(arr), n))
+lst = []
+
+# number of elements as input
+n = int(input("Enter number of elements : "))
+
+# iterating till the range
+for i in range(0, n):
+    ele = int(input())
+
+    lst.append(ele)  # adding the element
+
+print(lst)
