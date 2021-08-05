@@ -43,3 +43,13 @@ no need to declare p again
 as its already declared and its dangling pointer
 suppose we want to change array size at run time then its not possible using stack 
 its possible when i allocate array in heap then i can change array size at runtime  
+
+to delete array syntax is 
+*--> delete[] p
+and make pointer as NULL
+*--> p = NULL
+
+now p is completed got NULL
+its not pointing anything 
+and we exit from int main(){}
+p automatically gets deleted forever 
