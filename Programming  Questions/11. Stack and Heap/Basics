@@ -1,0 +1,45 @@
+*stack:
+memory stack and local variable
+variables are stores in this, and are local variables
+when returned they get popped out of stack
+cant chasnge order
+stack overflow:
+done when stack size is done but more variables are left
+mostly done in recursion
+stack size is fixed, hence stack gets overflown
+syntax: (normally storing variables)
+int p =10;
+
+*HEAP & Dynamic memory allocation:
+in this our varibales can be manually momory allocate and deallocate
+it is done in HEAP!
+done in free store as heal size is not fixed, if we need more memory then we can store in heap!
+heap can be expanded as much as our systems virtual memory!!
+to store variables to heap then we ue NEW operator!
+* (syntax) int *p = new int();
+example:
+*-->  int a =10;         // Stored in Stack
+*-->  int *p = new int() // Stored in Heap
+this p is directly not getting stored in heap, first it stores in stack which is pointing to memory address where our memory is allocated to store integer!
+p is pointer thats pointing ot memory address in Heap, in this memory address value is stored 
+and this happens dynamically
+can access this as long as we have its memoyr address
+and this acts as global variable
+*dynamic memory allocation: 
+when manually allocated we need to manually deallocate it too
+Stack will allocate and de-allocate manually
+to de-allocate manually we use new operator called delete
+*-->  delete(p)
+p will stay at same place called 
+* Dangling pointer
+this is pointing to memory allocation where any value is not stored
+basically dangling pointer is a pointer which points to memory location where there exsists no value 
+hence no use of dangling pointer variable
+we can reuse it to allocate other variable 
+else we need to remove this pointer from stack too 
+this is sued to store array
+*--> p = new int[4]
+no need to declare p again 
+as its already declared and its dangling pointer
+suppose we want to change array size at run time then its not possible using stack 
+its possible when i allocate array in heap then i can change array size at runtime  
