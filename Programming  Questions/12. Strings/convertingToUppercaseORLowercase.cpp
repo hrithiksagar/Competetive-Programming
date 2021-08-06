@@ -25,5 +25,13 @@ int main()
         }
     } 
     cout<< str<< endl; //ejsbajlcjzlfkwhnwkbdsabvkifhilcneklb
-    return 0;
+
+    // inbuilt function to make this automatically
+    string s = "kjdjkgkjFBCJHILfcbkjkfe";
+    //transform
+    transform(s.begin(), s.end(),s.begin(), ::toupper);
+    cout<<s <<endl;//KJDJKGKJFBCJHILFCBKJKFE
+    transform(s.begin(), s.end(),s.begin(), ::tolower);
+    cout<<s<<endl;//kjdjkgkjfbcjhilfcbkjkfe
+
 }
