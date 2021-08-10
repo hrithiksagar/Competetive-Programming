@@ -12,7 +12,13 @@ int main(){
  * 0101 & 0100 = 0100 : by this we get 
  * then
  * if n & (1<<i) != 0 then bit is 1
+ *
  * 
+ * 
+ * 
+ * 
+ * 
+ *  
 */
     return 0;
 }
