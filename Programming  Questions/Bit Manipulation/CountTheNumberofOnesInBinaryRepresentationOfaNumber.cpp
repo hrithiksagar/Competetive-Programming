@@ -9,7 +9,7 @@ using namespace std;
  * n&n-1 = 01011 & 01010
  *         01010 = 18
  *         compare with 19
- *         only rihgtmost 1 is the difference
+ *         only right most 1 is the difference
  *
  *  n = 18 = 01010
  * n-1 =17 = 01001
@@ -17,8 +17,18 @@ using namespace std;
  *                 01001 =16
  * n & n-1
  */
-
+int numberofOnes(int n)
+{
+    int count= 0;
+    while(n)
+    {
+        n = n&(n-1);
+        count++;
+    }
+    return count;
+}
 int main()
 {
-
+    cout<< numberofOnes(19)<<endl;
+    return 0;
 }
