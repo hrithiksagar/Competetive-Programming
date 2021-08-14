@@ -5,6 +5,13 @@
     "version": "0.2.0",
     "configurations": [
         {
+            "type": "java",
+            "name": "Launch ConnectRopes",
+            "request": "launch",
+            "mainClass": "ConnectRopes",
+            "projectName": "Competetive-Programming_b91bf5a6"
+        },
+        {
             "name": "g++-11 - Build and debug active file",
             "type": "cppdbg",
             "request": "launch",
