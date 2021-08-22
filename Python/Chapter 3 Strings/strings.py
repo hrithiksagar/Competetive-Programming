@@ -38,5 +38,4 @@ print(name[::-1])#kihtirh
 print(name[::2])#hihk
 print(name[::-2])#khih
 print(name[::3])#htk
-
 print()
