@@ -9,4 +9,6 @@ myDict = {
 }
 print("Options are: ", myDict.keys())
 a = input("enter hindi word: ")
-print("meaning of ur word is : ", myDict[a])
+#print("meaning of ur word is : ", myDict[a])
+# to avoid erros
+print("meaning of ur word is : ", myDict.get(a))
