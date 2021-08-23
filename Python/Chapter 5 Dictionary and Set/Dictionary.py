@@ -1,4 +1,6 @@
 # collection of key value pairs
+# dictionary is UNORDERED, MUTABLE, INDEXED, Cant contain dublicate keys
+# ime complexity to access : O(logN)
 # syntax
 myDict = {
     "fast": "In a quick manner",
@@ -16,3 +18,8 @@ print(myDict['another Dictionary']['key'])  # student # this is another dictiona
 # prints:
 # another Dictionary = Key of main dic
 # key = key of another dictionary
+# changing values of marks
+myDict['marks'] = [1, 10]
+print(myDict)
+
+
