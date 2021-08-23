@@ -19,3 +19,10 @@ print(myDict)
 updateDict = {"Lovish": "Friend"}
 myDict.update(updateDict)
 print(myDict)
+
+print(myDict.get('hrithik'))  # Learning to code
+print(myDict["hrithik"])  # Learning to code
+# both of these are same but hwy to use get method is to:
+# print(myDict["hrithik2"])  # throws error as hrithik2 is not present in the dictionary
+print(myDict.get('hrithik2'))  # Returns "None" as hrithik2 is not presen t in the dictionary
+# docs.python.org
