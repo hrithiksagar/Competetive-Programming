@@ -17,4 +17,7 @@ Every program has its own description for clear understaing <h3>
  
  --> Then the final fully functioning coded program.
  
+ 
+ Update on 24th Aug: 
+ <h2> The same thing is being done in Python Language from now on due to some personal issues.</h2>
  </h2>
